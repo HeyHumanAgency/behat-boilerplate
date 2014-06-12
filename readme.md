@@ -2,7 +2,7 @@
 
 Behat is an open source behavior-driven development framework for PHP. It uses the [Gherkin language](https://github.com/cucumber/cucumber/wiki/Gherkin) which lets you describe software behaviour without detailing how that behaviour is implemented.
 
-```
+```gherkin
 Feature: Global elements
 
 Scenario: Site is accessible
@@ -19,7 +19,7 @@ This runs two Scenarios (tests) within a Feature (group). It uses the bundled as
 
 You can also define your own conditions, actions and assertions by simply writing a test that Behat does not recognise it will generate the boilerplate code required to implement it, like so:
 
-```
+```gherkin
 Scenario: My custom test
 	Given I am on the homepage
 	And I complete the "test" form
