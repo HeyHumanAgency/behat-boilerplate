@@ -1,0 +1,16 @@
+{
+    "name": "heyhuman/behat-boilerplate",
+    "description": "Behat boilerplate project",
+    "authors": [
+        {
+            "name": "Jono Warren",
+            "email": "jonathan.warren@heyhuman.com"
+        }
+    ],
+    "dev-require": {
+        "behat/behat": "2.4.*@stable",
+        "behat/mink": "1.5.*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-goutte-driver": "*"
+    }
+}
