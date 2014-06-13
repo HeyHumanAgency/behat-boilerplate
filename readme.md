@@ -15,7 +15,7 @@ Scenario: There are no errors or warnings
 	And I should not see "warning"
 ```
 
-This runs two Scenarios (tests) within a Feature (group). It uses the bundled assertions and conditions that are included with Behat.
+This runs two Scenarios (tests) within a Feature (group). It uses the bundled assertions and conditions that are included with [Mink](http://mink.behat.org/) - an acceptance test framework that is part of Behat.
 
 You can also define your own conditions, actions and assertions by simply writing a test that Behat does not recognise it will generate the boilerplate code required to implement it, like so:
 
@@ -58,7 +58,9 @@ public function iCompleteTheForm($arg1)
 - `features/global.feature` - An example feature written in the Gherkin language that should be applicable to any site.
 
 
-## Available commands
+## Mink steps
+
+The default conditions, actions and assertions provided by Mink that can be used to write tests.
 
 ```
 Given /^(?:|I )am on (?:|the )homepage$/
