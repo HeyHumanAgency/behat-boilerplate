@@ -38,6 +38,26 @@ public function iCompleteTheForm($arg1)
 }
 ```
 
+## Project structure
+
+```
+.
+├── behat.yml
+├── composer.json
+└── features
+    ├── bootstrap
+    │   └── FeatureContext.php
+    └── global.feature
+```
+
+- `behat.yml` - The project configuration file, contains things like the URLs to run tests against and browser driver options.
+- `composer.json` - Declares the Behat dependencies as development dependencies along with Mink and the [Goutte browser](https://github.com/fabpot/goutte) driver.
+- `features/` - Contains all the project tests
+- `features/bootstrap/` - Contains PHP files that define custom conditions, actions and assertions used to write tests.
+- `features/bootstrap/FeatureContext.php` - Loads the Mink context for tests, custom tests can be added as methods on the `FeatureContext` class.
+- `features/global.feature` - An example feature written in the Gherkin language that should be applicable to any site.
+
+
 ## Available commands
 
 ```
